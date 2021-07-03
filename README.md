@@ -39,7 +39,10 @@
     kubectl describe deployment <deployment-name>
 
 ## Create Pod/Service/Deployment/PVC using manifest file:
-    kubectl create -f <filename>
+    kubectl create -f <filename.yml>
+
+## Delete Pod/Service/Deployment/PVC from manifest file:
+    kubectl delete -f <filename.yml>
 
 ## Expose Deployment to specific port:
     kubectl expose deployment <deployment-name> --port 80 --type=NodePort
