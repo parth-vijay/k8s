@@ -50,9 +50,9 @@
     kubectl expose deployment <deployment-name> --port 80 --type=LoadBalancer
 
 ## Perform Roll Update in Deployment:
-    kubectl set image deployemtn <deployment-name> <conatiner-name>=<image-name>:<tag>
-    kubectl set image deployemtn <deployment-name> <conatiner-name>=<image-name>:<tag> --record
+    kubectl set image deployment <deployment-name> <container-name>=<image-name>:<tag>
+    kubectl set image deployment <deployment-name> <container-name>=<image-name>:<tag> --record
 
 ## Minikube url:
-    minikube service <serviuce-name>
-    minikube service <serviuce-name> --url
+    minikube service <service-name>
+    minikube service <service-name> --url
