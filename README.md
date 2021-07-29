@@ -67,7 +67,7 @@
     minikube service <service-name>
     minikube service <service-name> --url
 
-## Steps to deploy EKS:
+## Steps to deploy AWS EKS:
 
 1. Create AWS Role for EKS.
 2. Set up **eksctl** on your system.
