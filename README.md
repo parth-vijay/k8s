@@ -1,5 +1,11 @@
 # k8s
 
+## Set up Minikube on Ubuntu:
+    https://phoenixnap.com/kb/install-minikube-on-ubuntu
+
+## Set up Minikube on MacOS:
+    https://matthewpalmer.net/kubernetes-app-developer/articles/guide-install-kubernetes-mac.html
+
 ## Start minikube:
     minikube start
 
@@ -44,6 +50,9 @@
 ## Delete Pod/Service/Deployment/PVC from manifest file:
     kubectl delete -f <filename.yml>
 
+## Delete all resources:
+    kubectl delete all --all
+
 ## Expose Deployment to specific port:
     kubectl expose deployment <deployment-name> --port 80 --type=NodePort
     kubectl expose deployment <deployment-name> --port 80 --type=ClusterIP
@@ -54,5 +63,6 @@
     kubectl set image deployment <deployment-name> <container-name>=<image-name>:<tag> --record
 
 ## Minikube url:
+    minikube ip
     minikube service <service-name>
     minikube service <service-name> --url
