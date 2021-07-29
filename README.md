@@ -66,3 +66,12 @@
     minikube ip
     minikube service <service-name>
     minikube service <service-name> --url
+
+## 
+Steps to deploy EKS:
+
+1. Create AWS Role for EKS.
+2. Set up **eksctl** on your system.
+3. Install **aws-cli** on your system and configure it with yout AWS Account.
+4. Create **cluster.yml** for launching the EKS cluster.
+5. Update **kubeconfig**. 
