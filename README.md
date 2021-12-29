@@ -27,9 +27,9 @@
     kubectl cluster-info
 
 **MacOS**:-
-    ```brew install kubectl
-    kubectl version --client
-    kubectl cluster-info```
+        brew install kubectl
+        kubectl version --client
+        kubectl cluster-info
 
 ## Install *awscli*:
 **Ubuntu**:-
