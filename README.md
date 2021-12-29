@@ -12,6 +12,7 @@
     kubectl cluster-info
 
 **Red Hat-based distributions**:-
+    ```
     cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
     [kubernetes]
     name=Kubernetes
@@ -21,15 +22,16 @@
     repo_gpgcheck=1
     gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
     EOF
+    ```
 
     sudo yum install -y kubectl
     kubectl version --client
     kubectl cluster-info
 
 **MacOS**:-
-        brew install kubectl
-        kubectl version --client
-        kubectl cluster-info
+    brew install kubectl
+    kubectl version --client
+    kubectl cluster-info
 
 ## Install *awscli*:
 **Ubuntu**:-
